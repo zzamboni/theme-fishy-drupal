@@ -39,5 +39,5 @@ function fish_prompt
     set drush_info "$green drush:($drush_alias$green)"
   end
 
-  echo -n -s $arrow $cwd $git_info $drush_info $git_dirty $normal ' '
+  echo -n -s (whoami)"@"(hostname -s)$arrow $cwd $git_info $drush_info $git_dirty $normal ' '
 end
